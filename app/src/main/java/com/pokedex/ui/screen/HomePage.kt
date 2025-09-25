@@ -20,8 +20,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil.compose.AsyncImage
-import coil.request.ImageRequest
 import com.pokedex.data.model.Pokemon
 import com.pokedex.data.repository.PokeRepository
 
@@ -138,7 +136,7 @@ fun PokemonCardDark(
                         .size(12.dp)
                         .background(
                             getTypeColor(pokemon.type.firstOrNull() ?: "Normal"),
-                            shape = androidx.compose.foundation.shape.CircleShape
+                            shape = CircleShape
                         )
                 )
             }
@@ -151,7 +149,7 @@ fun PokemonCardDark(
                     .size(120.dp)
                     .background(
                         Color(0xFF404040),
-                        shape = androidx.compose.foundation.shape.CircleShape
+                        shape = CircleShape
                     )
                     .align(Alignment.CenterHorizontally),
                 contentAlignment = Alignment.Center
