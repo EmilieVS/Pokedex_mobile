@@ -22,7 +22,13 @@ class PokeRepository(private val context: Context) {
             emptyList()
         }
     }
+
+    fun getPokemonById(id: Int): Pokemon? {
+        val list =  loadPokemonData()
+        return list.find { it.id == id }
+    }
 }
+
 
 
 
