@@ -30,7 +30,7 @@ fun PokemonDetailScreen(
     val repository = remember { PokeRepository(context) }
     val pokemon = remember { repository.getPokemonById(pokemonId) }
 
-    if (pokemon == null) {
+    if (pokemon == null) { // if null for api future needs
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
@@ -45,6 +45,7 @@ fun PokemonDetailScreen(
             .fillMaxSize()
             .background(Color(0xFF1A1A1A))
             .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         PokemonCard(

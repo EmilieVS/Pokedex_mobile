@@ -23,7 +23,7 @@ class PokeRepository(private val context: Context) {
         }
     }
 
-    fun getPokemonById(id: Int): Pokemon? {
+    fun getPokemonById(id: Int): Pokemon? { // checking if null for api future needs
         val list =  loadPokemonData()
         return list.find { it.id == id }
     }
