@@ -1,4 +1,4 @@
-# 📘 Pokédex App
+# 📘 Pokedex App
 
 👩‍💻 **Solo project**  
 👥 **Developer**: 1 junior developer  
@@ -15,7 +15,7 @@
 
 ## 📑 Project guidelines
 
-❔ **Goal:** Create an Android app displaying Pokémon data.  
+❔ **Goal:** Create an Android app displaying Pokemon data.  
 💭 **Purpose:** Experiment, learn and improve skills in Jetpack Compose and Android development.  
 👤 **Features:**  
 - Browse a list of Pokémon  
