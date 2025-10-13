@@ -47,8 +47,7 @@
 |---------------|
 | <img width="687" height="1214" alt="image" src="https://github.com/user-attachments/assets/39653eb8-0d99-441d-a625-af7085bbcf55" />|
 
-<video controls width="400">
-  <source src="https://github.com/EmilieVS/Pokedex_frontend/raw/master/Pokedex%20Demo.webm" type="video/webm">
+<video src="https://github.com/EmilieVS/Pokedex_mobile/raw/main/Pokedex%20Demo.webm" controls width="100%">
 </video>
 
 
