@@ -47,5 +47,7 @@
 |---------------|
 | <img width="687" height="1214" alt="image" src="https://github.com/user-attachments/assets/39653eb8-0d99-441d-a625-af7085bbcf55" />|
 
+[🎥 Quick demonstration](./Pokedex%20Demo.webm)
+
 
 > _Previews will be updated as the project evolves._
