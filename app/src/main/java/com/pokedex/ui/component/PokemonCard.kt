@@ -1,5 +1,6 @@
 package com.pokedex.ui.component
 
+
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -17,6 +18,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pokedex.data.model.Pokemon
+import EvolutionInfo
+import PokeInfo
 
 
 @Composable
@@ -24,6 +27,7 @@ fun PokemonCard(
     pokemon: Pokemon,
     modifier: Modifier = Modifier,
     compact: Boolean = false,
+    showDetails: Boolean = false,
     onClick: (() -> Unit)? = null
 ) {
     Box(
@@ -52,7 +56,6 @@ fun PokemonCard(
                     .fillMaxWidth()
                     .padding(12.dp)
             ) {
-                // --- Header ---
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -118,7 +121,7 @@ fun PokemonCard(
                 if (!compact) {
                     Spacer(modifier = Modifier.height(8.dp))
 
-                    // --- Stats ---
+                    // --- Infos ---
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
@@ -147,6 +150,24 @@ fun PokemonCard(
                             color = Color.White,
                             fontWeight = FontWeight.Bold
                         )
+                    }
+                    if (showDetails) {
+                        Spacer(modifier = Modifier.height(8.dp))
+                        PokeInfo("Height", pokemon.height)
+                        PokeInfo("Weight", pokemon.weight)
+                        PokeInfo("Weaknesses", pokemon.weaknesses?.joinToString(", ") ?: "Aucune")
+
+                        pokemon.prevEvolution?.let {
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text("Previous Evolutions :", color = Color.White, fontWeight = FontWeight.Bold)
+                            EvolutionInfo(it)
+                        }
+
+                        pokemon.nextEvolution?.let {
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text("Next Evolutions :", color = Color.White, fontWeight = FontWeight.Bold)
+                            EvolutionInfo(it)
+                        }
                     }
                 }
             }

@@ -76,7 +76,7 @@ fun HomePage(
 
         // getting the pokemon list
         LazyVerticalGrid(
-            columns = GridCells.Fixed(2), // ✅ 2 par ligne
+            columns = GridCells.Fixed(2), // 2 per row
             modifier = Modifier.fillMaxSize(),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -86,6 +86,7 @@ fun HomePage(
                 PokemonCard(
                     pokemon = pokemon,
                     compact = false,
+                    showDetails = false,
                     onClick = { pokeID(pokemon.id) }
                 )
             }
