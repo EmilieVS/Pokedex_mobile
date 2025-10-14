@@ -3,7 +3,7 @@
 👩‍💻 **Solo project**  
 👥 **Developer**: 1 junior developer  
 🏃 **Duration**: Ongoing (evolving project)  
-🏄 **Theme**: Create a Pokédex Android application.
+🏄 **Theme**: Create a Pokedex Android application.
 
 ---
 
