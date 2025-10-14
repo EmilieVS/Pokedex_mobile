@@ -40,14 +40,14 @@
 <div align="center">
 
 ### Mockup
-<img style="max-height: 15vh; max-width: 100%; width: auto; height: auto;" alt="maquette pokedex finale" src="https://github.com/user-attachments/assets/39446488-89d4-467a-b8f6-9cbf26b24480" />
+<img style="max-height: 250px; width: auto;" alt="maquette pokedex finale" src="https://github.com/user-attachments/assets/39446488-89d4-467a-b8f6-9cbf26b24480" />
 
 ### Current Result & Demonstration
 
 <table width="100%">
 <tr>
-<td width="50%"><img style="max-height: 25vh; max-width: 100%; width: auto; height: auto;" alt="Current Result" src="https://github.com/user-attachments/assets/39653eb8-0d99-441d-a625-af7085bbcf55" /></td>
-<td width="50%"><img style="max-height: 25vh; max-width: 100%; width: auto; height: auto;" alt="Demonstration" src="./Gifdemonstration.gif" /></td>
+<td><img style="height: 400px; width: auto;" alt="Current Result" src="https://github.com/user-attachments/assets/39653eb8-0d99-441d-a625-af7085bbcf55" /></td>
+<td><img style="height: 400px; width: auto;" alt="Demonstration" src="./Gifdemonstration.gif" /></td>
 </tr>
 </table>
 
