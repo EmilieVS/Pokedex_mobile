@@ -44,7 +44,7 @@
 
 ### Current Result & Demonstration
 
-<table>
+<table width="100%">
 <tr>
 <td><img style="height: 400px; width: auto;" alt="Current Result" src="https://github.com/user-attachments/assets/39653eb8-0d99-441d-a625-af7085bbcf55" /></td>
 <td><img style="height: 400px; width: auto;" alt="Demonstration" src="./Gifdemonstration.gif" /></td>
