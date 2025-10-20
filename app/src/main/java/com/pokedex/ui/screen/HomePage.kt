@@ -1,12 +1,12 @@
 package com.pokedex.ui.screen
 
-
+import com.pokedex.R
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -17,6 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.rememberAsyncImagePainter
 import com.pokedex.data.repository.PokeRepository
 import com.pokedex.ui.component.PokemonCard
 
@@ -60,15 +61,15 @@ fun HomePage(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center
             ) {
-                Box(
+                Image(
+                    painter = rememberAsyncImagePainter(model = R.drawable.pokeball_logo),
+                    contentDescription = "Logo SVG",
                     modifier = Modifier
-                        .size(24.dp)
-                        .background(Color.Red, shape = CircleShape)
-                )
-                Spacer(modifier = Modifier.width(8.dp))
+                        .size(56.dp)
+                    )
                 Text(
                     text = "Pokedex",
-                    fontSize = 18.sp,
+                    fontSize = 24.sp,
                     color = Color.White
                 )
             }
