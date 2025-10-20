@@ -47,9 +47,16 @@ fun HomePage(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 20.dp),
+//                .wrapContentHeight()
+                .padding(vertical = 12.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+//            Image(
+//                painter = rememberAsyncImagePainter(model = R.drawable.pokemon_logo),
+//                contentDescription = "Logo SVG",
+//                modifier = Modifier
+//                    .size(80.dp)
+//            )
             Text(
                 text = "Pokémon",
                 fontSize = 32.sp,
@@ -65,12 +72,13 @@ fun HomePage(
                     painter = rememberAsyncImagePainter(model = R.drawable.pokeball_logo),
                     contentDescription = "Logo SVG",
                     modifier = Modifier
-                        .size(56.dp)
+                        .size(64.dp)
                     )
                 Text(
                     text = "Pokedex",
-                    fontSize = 24.sp,
-                    color = Color.White
+                    fontSize = 18.sp,
+                    color = Color.White,
+                    textAlign = TextAlign.Center
                 )
             }
         }
